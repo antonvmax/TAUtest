@@ -16,4 +16,10 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
+    <Button
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:text="Map Btn"
+            android:id="@+id/btnMap"/>
+
 </android.support.constraint.ConstraintLayout>
