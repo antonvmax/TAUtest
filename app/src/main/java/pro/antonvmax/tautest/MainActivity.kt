@@ -16,17 +16,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        if (isServicesOK()) {
-            init()
-        }
+//        if (isServicesOK()) {
+//            init()
+//        }
     }
 
     fun init() {
-        val btnMap = findViewById(R.id.btnMap) as Button
-        btnMap.setOnClickListener(View.OnClickListener {
-            intent = Intent(this, MapsActivity::class.java)
-            startActivity(intent)
-        })
+//        val btnMap = findViewById(R.id.btnMap) as Button
+//        btnMap.setOnClickListener(View.OnClickListener {
+//            intent = Intent(this, MapsActivity::class.java)
+//            startActivity(intent)
+//        })
     }
 
     fun isServicesOK(): Boolean {

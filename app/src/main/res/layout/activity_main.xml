@@ -7,19 +7,59 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="What now, lonely man?"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <Button
-            android:layout_width="200dp"
-            android:layout_height="100dp"
-            android:text="Map Btn"
-            android:id="@+id/btnMap"/>
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/map"
+                  tools:context=".MapsActivity"
+                  android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What now, lonely man?"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:text="Map Btn"-->
+        <!--android:layout_gravity="bottom|center_horizontal"-->
+        <!--android:id="@+id/btnMap"/>-->
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="bottom|center_horizontal">
+            <fragment
+                    android:id="@+id/fragment1"
+                    android:name="pro.antonvmax.tautest.ChargingPointNameFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    tools:layout="@layout/fragment_charging_point_name">
+            </fragment>
+            <fragment
+                    android:id="@+id/fragment2"
+                    android:name="pro.antonvmax.tautest.BottomMenuFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout="@layout/fragment_bottom_menu">
+            </fragment>
+        </LinearLayout>
+
+
+    </FrameLayout>
 
 </android.support.constraint.ConstraintLayout>

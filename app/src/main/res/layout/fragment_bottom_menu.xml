@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#777777"
+                tools:context=".BottomMenuFragment">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Cheapest Route"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_alignParentRight="true"
+            android:text="Cheapest Route"/>
+    <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#5555ff"/>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="10dp">
+        <View
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentLeft="true"
+                android:background="#333333"/>
+        <View
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="100dp"
+                android:layout_alignParentLeft="true"
+                android:background="#333333"/>
+        <View
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="100dp"
+                android:background="#333333"/>
+        <View
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="#333333"/>
+    </RelativeLayout>
+
+    <!--<TextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:text="@string/hello_blank_fragment"/>-->
+
+</RelativeLayout>
